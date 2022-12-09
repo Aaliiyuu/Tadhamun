@@ -1,0 +1,114 @@
+/* slider_style
+.slider-frame{
+    overflow:hidden;
+    height: 100vh;
+    width: 100%;
+    margin-left: 300px;
+}
+@-webkit-keyframes slide_animation{
+  0%{left: 0;}
+  10%{}
+}
+.slider-image{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+}
+.image_container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    float: left;
+} */
+.slider{
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+figure{
+    position: relative;
+    left: 0;
+    width: 400%;
+    animation: 30s slide infinite;
+
+}
+.slide{
+    position: relative;
+    width: 25%;
+    float: left;
+}
+h1{
+    position: absolute;
+    text-align: center;
+    margin-top: 300px;
+    color: darkorange;
+    align-items: center;
+    margin-left: 300px;
+}
+.slide img{
+    width: 100%;
+    height: 500px;
+}
+@keyframes slide{
+    0%{left: 0%;}
+    10%{left: 0%;}
+    20%{left: -100%;}
+    30%{left: -100%;}
+    40%{left: -200%;}
+    50%{left: -200%;}
+    55%{left: -300%;}
+    65%{left: -300%;}
+    74%{left: -200%;}
+    75%{left: -200%;}
+    85%{left:-100%}
+    90%{left:0%}
+    100%{left: 0%;}
+}
+figure h1{
+    position: absolute;
+    color: aliceblue;
+    align-items: center;
+}
+.body-container{
+    background-image:url(backgroud2.jpg) ;
+    background-size: cover;
+    background-position: inherit;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px -26px -76px 0px rgba(0, 0, 0, 0.5);
+    border-top: 2px solid white;
+}
+.icon-message{
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    transition: 0.4s ease;
+    border-bottom: 2px solid transparent;
+    width: 18%;
+}
+.icon-message:hover{
+    border-bottom: 2px solid black;
+    border-radius: 10px;
+
+}
+.members{
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+.number:hover{
+    letter-spacing: 1px;
+}
+.missing{
+    padding-top: 10px;
+}
